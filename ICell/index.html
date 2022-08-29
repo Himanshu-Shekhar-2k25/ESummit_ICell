@@ -1,0 +1,292 @@
+<html>
+
+<head>
+    <title>ICell E-Summit</title>
+    <style>
+        body {
+            background-image: url('wallpaper1.jpg')
+        }
+
+        .logos {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        #main_head {
+            background: -webkit-linear-gradient(gray, white);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 55px;
+            font-family: tahoma;
+            font-weight: bolder;
+            margin-top: 7px;
+            padding-left: 20px;
+            padding-right: 20px
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            border: 3px solid white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin: 0px;
+            background-color: rgba(0, 0, 255, 0.199);
+        }
+
+        .nav_item {
+            background-color: white;
+            font-size: 20px;
+            padding: 6px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-weight: bolder;
+            font-family: "arial";
+            font-size: 22px;
+        }
+
+        a:hover {
+            color: deeppink;
+            background-color: black;
+        }
+
+        #ES {
+            color: linear-gradient(red, yellow);
+            font-size: 120px;
+            font-weight: bolder;
+            font-style: italic;
+            font-family: Brush Script MT;
+            margin-top: 60px;
+            background: -webkit-linear-gradient(red, yellow);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        #our_event {
+            color: linear-gradient(red, yellow);
+            font-size: 120px;
+            font-weight: bolder;
+            font-style: italic;
+            font-family: Brush Script MT;
+            margin-top: 60px;
+            background: -webkit-linear-gradient(red, yellow);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .photos_p {
+            padding-left: 20px;
+
+        }
+
+        .events {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .event_el1 {
+            background-color: white;
+            padding: 30px;
+            margin-top: 0px;
+            background-color: grey;
+            color: black;
+            font-weight: bolder;
+            font-size: 30px;
+            border: 4px solid black;
+            font-family: cursive;
+            text-decoration: underline;
+            border-radius: 100px;
+
+        }
+
+        .event_el2 {
+            background-color: white;
+            padding: 30px;
+            margin-top: 0px;
+            color: black;
+            font-weight: bolder;
+            font-size: 30px;
+            border: 4px solid black;
+            font-family: cursive;
+            text-decoration: underline;
+            border-radius: 100px;
+
+        }
+
+        .event_el1:hover {
+            color: white;
+            background-color: black;
+        }
+
+        .event_el2:hover {
+            color: white;
+            background-color: black;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .contact {
+            color: white;
+            border: 4px dashed white;
+            margin-top: 100px;
+            padding: 20px;
+            font-family: tahoma;
+            font-weight: bolder;
+        }
+
+        .institute_contact {
+            color: white;
+            border: 4px dashed white;
+            margin-top: 100px;
+            padding: 20px;
+            font-family: tahoma;
+            font-weight: bolder;
+
+        }
+
+        #map {
+            margin-top: 100px;
+            border: 4px solid white;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width,initial scale=1.0,maximum scale=1.0">
+
+
+    <script>
+        function change() {
+            document.getElementById("ES").innerText = "A Technical Wonder";
+        }
+        function changeback() {
+            document.getElementById("ES").innerText = " E - Summit 2022 ";
+        }
+        function change_1() {
+            document.getElementById("our_event").innerText = "Our Events";
+        }
+        function change_2() {
+            document.getElementById("our_event").innerText = "A  Star  Attraction";
+        }
+        function submit_click() {
+            alert("Your details have been registered successfully. We will connect with you shortly.  Thank You.....");
+        }
+        function reset_click() {
+            alert("The form has been reset. Please enter your details");
+        }
+        var i = 0;
+        var txt = "Welcome to The E - Summit 2022";
+
+        var speed = 100;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("ES").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+    </script>
+</head>
+
+<body onmouseover="typeWriter()">
+    <div class="logos">
+        <div id="clg_logo"><img src="logo.png" height="250px" width="250px"></div>
+        <div>
+            <h1 id="main_head"><b>National Institute Of
+                    Technology<br>
+                    <center>And</center>
+                    <center>Industry
+                        Cell</center>
+                </b></h1>
+        </div>
+        <div id="icell_logo"><img src="icell.logo.png" height="250px" width="250px"></span></div>
+    </div>
+
+    <div class="navbar">
+        <div class="nav_item"><a href="" target="_blank">Home</a></div>
+        <div class="nav_item"><a href="" target="_blank">About Us</a></div>
+        <div class="nav_item"><a href="" target="_blank">Our Vision</a></div>
+        <div class="nav_item"><a href="" target="_blank">Events</a></div>
+        <div class="nav_item"><a href="" target="_blank">Sponsors</a></div>
+        <div class="nav_item"><a href="" target="_blank">Gallery</a></div>
+        <div class="nav_item"><a href="" target="_blank">Contact Us</a></div>
+    </div>
+    <h1 align="center" id="ES" onmouseout="changeback()" onmouseover="change()"></h1>
+    <span class="photos">
+        <marquee scrollamount="20" onmouseover="this.stop()" onmouseout="this.start()">
+            <span class="photos_p"><img src="p1.jpg" height="250px" width="500px"
+                    style="border:4px dashed white"></span>
+            <span class="photos_p"><img src="p2.jpg" height="250px" width="500px"
+                    style="border:4px dashed white"></span>
+            <span class="photos_p"><img src="p3.jpg" height="250px" width="500px"
+                    style="border:4px dashed white"></span>
+            <span class="photos_p"><img src="pic1.jpeg" height="250px" width="500px"
+                    style="border:4px dashed white"></span>
+            <span class="photos_p"><img src="pic2.jpg" height="250px" width="500px"
+                    style="border:4px dashed white"></span>
+        </marquee>
+    </span>
+    <center>
+        <h1 style="font-size:80px;font-family:georgia;padding-bottom:4px;border-bottom:8px dashed skyblue"
+            id="our_event" onmouseout="change_1()" onmouseover="change_2()">Our
+            Events</h1>
+    </center>
+    <div class="events">
+        <div class="event_el1">B-Plan</div>
+        <div class="event_el2">Productathon</div>
+        <div class="event_el1">Trade Hunt</div>
+        <div class="event_el2">Young Leaders</div>
+        <div class="event_el1">B-Quiz</div>
+    </div>
+    <center>
+        <h1 id="ES" style="font-size:80px;font-family:georgia;padding-bottom:4px;border-bottom:8px dashed skyblue">
+            Highlights of &nbsp;E-Summit</h1>
+    </center>
+    <div class="events">
+        <div class="event_el2">20+ Events</div>
+        <div class="event_el1">5000+ footfalls</div>
+        <div class="event_el2">50+ speakers</div>
+        <div class="event_el1">500+ Prizes</div>
+    </div>
+    <div class="info">
+        <div class="contact">
+            <h1>&star; Get in touch with us</h1>
+            Name: &nbsp;<input type="text" style="background:lightpink;padding:6px;width:300px"><br><br>
+            E-Mail: <input type="email" style="background:lightpink;padding:6px;width:300px"><br><br>
+            Phone: <input type="text" style="background:lightpink;padding:6px;width:300px"><br><br>
+            <center>
+                <input type="submit" value="Submit Now"
+                    style="padding:10px;font-size:15px;font-weight:bolder;font-family:arial;background-color:lightskyblue"
+                    onclick="submit_click()">
+                <input type="reset" value="Reset Now"
+                    style="padding:10px;font-size:15px;font-weight:bolder;font-family:arial;background-color:lightskyblue"
+                    onclick="reset_click()">
+            </center>
+        </div>
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.326553727543!2d76.81527531505748!3d29.941284330393586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e3f422f5244e7%3A0x9c630c311d6349b8!2sNIT%20KURUKSHETRA!5e0!3m2!1sen!2sin!4v1661277483459!5m2!1sen!2sin"
+                width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
+        </div>
+        <div class="institute_contact">
+            <p style="color:white;font-size:15px;font-weight:bold">&star; Address :<br><br> National Institute of
+                Technology, Kurukshetra<br>
+                Kirmich Road, Near Brahma Sarovar,<br>
+                Thanesar, Haryana -136119.<br><br><br>
+                &star; Contact:<br><br>
+                Dean Student Welfare : 9746125634<br>
+                Dean Academics : 9746125634<br>
+                Registrar : 9746125634<br>
+                Student Help-Desk : 9746125634<br>
+            </p>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
