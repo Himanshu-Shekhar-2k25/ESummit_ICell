@@ -1,0 +1,380 @@
+<html>
+
+<head>
+    <title>ICell E-Summit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Maze&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url('wallpaper1.jpg')
+        }
+
+        .logos {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        #main_head {
+            background: -webkit-linear-gradient(darkgrey, white);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 45px;
+            font-family: 'Monoton', cursive;
+            font-weight: bolder;
+            margin-top: 7px;
+            padding-left: 20px;
+            padding-right: 20px
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            border: 3px solid white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin: 0px;
+            background-color: rgba(0, 0, 255, 0.199);
+        }
+
+        .nav_item {
+            background-color: white;
+            font-size: 10px;
+            padding: 6px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-weight: bolder;
+            font-family: 'Jua', sans-serif;
+            font-size: 22px;
+            border-radius: 10px;
+            border: 4px dashed coral;
+        }
+
+        a:hover {
+            color: black;
+            background-color: gray;
+        }
+
+        #ES {
+            color: linear-gradient(red, yellow);
+            font-size: 78px;
+            font-weight: bolder;
+            font-style: italic;
+            font-family: 'Audiowide', cursive;
+            margin-top: 60px;
+            background: -webkit-linear-gradient(red, yellow);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        #our_event {
+            color: linear-gradient(red, yellow);
+            font-size: 120px;
+            font-weight: bolder;
+            font-style: italic;
+            font-family: 'Audiowide', cursive;
+            margin-top: 60px;
+            background: -webkit-linear-gradient(red, yellow);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .photos_p {
+            padding-left: 20px;
+
+        }
+
+        .events {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .event_el1 {
+            background-color: white;
+            padding: 20px;
+            margin-top: 0px;
+            background-color: grey;
+            color: black;
+            font-weight: bolder;
+            font-size: 35px;
+            border: 4px solid black;
+            font-family: 'Kaushan Script', cursive;
+            text-decoration: underline;
+            border-radius: 100px;
+
+        }
+
+        .event_el2 {
+            background-color: white;
+            padding: 20px;
+            margin-top: 0px;
+            color: black;
+            font-weight: bolder;
+            font-size: 35px;
+            border: 4px solid black;
+            font-family: 'Kaushan Script', cursive;
+            text-decoration: underline;
+            border-radius: 100px;
+
+        }
+
+        .event_el1:hover {
+            color: white;
+            background-color: black;
+        }
+
+        .event_el2:hover {
+            color: white;
+            background-color: black;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .contact {
+            color: white;
+            border: 4px dashed white;
+            margin-top: 100px;
+            padding: 20px;
+            font-family: tahoma;
+            font-weight: bolder;
+        }
+
+        .institute_contact {
+            color: white;
+            border: 4px dashed white;
+            margin-top: 100px;
+            padding: 20px;
+            font-family: tahoma;
+            font-weight: bolder;
+
+        }
+
+        #map {
+            margin-top: 100px;
+            border: 4px solid white;
+        }
+
+        #register {
+            background-color: black;
+            margin-top: 80px;
+            width: 350px;
+            height: 100px;
+            color: skyblue;
+            font-size: 40px;
+            padding: 20px;
+            border: 8px solid goldenrod;
+            border-radius: 20px;
+            font-family: 'Kaushan Script', cursive;
+            padding-bottom: 80px;
+            font-weight: bolder;
+        }
+
+        #register:hover {
+            color: red;
+        }
+    </style>
+    <script>
+        function change() {
+            document.getElementById("ES").innerText = "A Technical Wonder";
+        }
+        function changeback() {
+            document.getElementById("ES").innerText = " E - Summit 2022 ";
+        }
+        function change_1() {
+            document.getElementById("our_event").innerText = "Our Events";
+        }
+        function change_2() {
+            document.getElementById("our_event").innerText = "A  Star  Attraction";
+        }
+        function submit_click() {
+            alert("Your details have been registered successfully. We will connect with you shortly.  Thank You.....");
+        }
+        function reset_click() {
+            alert("The form has been reset. Please enter your details");
+        }
+        var i = 0;
+        var txt = "Welcome to The E - Summit 2022";
+
+        var speed = 100;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("ES").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+    </script>
+</head>
+
+<body onmouseover="typeWriter()">
+    <div class="logos">
+        <div id="clg_logo"><img src="logo.png" height="250px" width="250px"></div>
+        <div>
+            <h1 id="main_head"><b>National Institute Of
+                    Technology <center>Kurukshetra</center>
+                    <center>And</center>
+                    <center>Industry
+                        Cell</center>
+                </b></h1>
+        </div>
+        <div id="icell_logo"><img src="icell.logo.png" height="250px" width="250px"></span></div>
+    </div>
+
+    <div class="navbar">
+        <div class="nav_item"><a href="" target="_blank">Home</a></div>
+        <div class="nav_item"><a href="" target="_blank">About Us</a></div>
+        <div class="nav_item"><a href="" target="_blank">Our Vision</a></div>
+        <div class="nav_item"><a href="" target="_blank">Events</a></div>
+        <div class="nav_item"><a href="" target="_blank">Sponsors</a></div>
+        <div class="nav_item"><a href="" target="_blank">Gallery</a></div>
+        <div class="nav_item"><a href="" target="_blank">Contact Us</a></div>
+    </div>
+    <h1 align="center" id="ES" onmouseout="changeback()" onmouseover="change()"></h1>
+    <span class="photos">
+        <marquee scrollamount="17.5">
+            <span class="photos_p"><img src="p1.jpg" height="250px" width="500px"
+                    style="border:4px dashed white"></span>
+            <span class="photos_p"><img src="p2.jpg" height="250px" width="500px"
+                    style="border:4px dashed white"></span>
+            <span class="photos_p"><img src="p3.jpg" height="250px" width="500px"
+                    style="border:4px dashed white"></span>
+            <span class="photos_p"><img src="pic1.jpeg" height="250px" width="500px"
+                    style="border:4px dashed white"></span>
+            <span class="photos_p"><img src="pic2.jpg" height="250px" width="500px"
+                    style="border:4px dashed white"></span>
+        </marquee>
+    </span>
+    <center>
+        <h1 style="font-size:80px;font-family: 'Audiowide', cursive;;padding-bottom:4px;border-bottom:8px dashed skyblue"
+            id="our_event" onmouseout="change_1()" onmouseover="change_2()">Our
+            Events</h1>
+    </center>
+    <div class="events">
+        <div class="event_el1">B-Plan</div>
+        <div class="event_el2">Productathon</div>
+        <div class="event_el1">Trade Hunt</div>
+        <div class="event_el2">Young Leaders</div>
+        <div class="event_el1">B-Quiz</div>
+    </div>
+    <center>
+        <h1 id="ES"
+            style="font-size:80px;font-family: 'Audiowide', cursive;;padding-bottom:4px;border-bottom:8px dashed skyblue">
+            Highlights of &nbsp;E-Summit</h1>
+    </center>
+    <div class="events">
+        <div class="event_el2">20+ Events</div>
+        <div class="event_el1">5000+ footfalls</div>
+        <div class="event_el2">50+ speakers</div>
+        <div class="event_el1">500+ Prizes</div>
+    </div>
+
+
+    <div id="register_div">
+        <center><button id="register"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-browser-edge" viewBox="0 0 16 16">
+                    <path
+                        d="M9.482 9.341c-.069.062-.17.153-.17.309 0 .162.107.325.3.456.877.613 2.521.54 2.592.538h.002c.667 0 1.32-.18 1.894-.519A3.838 3.838 0 0 0 16 6.819c.018-1.316-.44-2.218-.666-2.664l-.04-.08C13.963 1.487 11.106 0 8 0A8 8 0 0 0 .473 5.29C1.488 4.048 3.183 3.262 5 3.262c2.83 0 5.01 1.885 5.01 4.797h-.004v.002c0 .338-.168.832-.487 1.244l.006-.006a.594.594 0 0 1-.043.041Z" />
+                    <path
+                        d="M.01 7.753a8.137 8.137 0 0 0 .753 3.641 8 8 0 0 0 6.495 4.564 5.21 5.21 0 0 1-.785-.377h-.01l-.12-.075a5.45 5.45 0 0 1-1.56-1.463A5.543 5.543 0 0 1 6.81 5.8l.01-.004.025-.012c.208-.098.62-.292 1.167-.285.129.001.257.012.384.033a4.037 4.037 0 0 0-.993-.698l-.01-.005C6.348 4.282 5.199 4.263 5 4.263c-2.44 0-4.824 1.634-4.99 3.49Zm10.263 7.912c.088-.027.177-.054.265-.084-.102.032-.204.06-.307.086l.042-.002Z" />
+                    <path
+                        d="M10.228 15.667a5.21 5.21 0 0 0 .303-.086l.082-.025a8.019 8.019 0 0 0 4.162-3.3.25.25 0 0 0-.331-.35c-.215.112-.436.21-.663.294a6.367 6.367 0 0 1-2.243.4c-2.957 0-5.532-2.031-5.532-4.644.002-.135.017-.268.046-.399a4.543 4.543 0 0 0-.46 5.898l.003.005c.315.441.707.821 1.158 1.121h.003l.144.09c.877.55 1.721 1.078 3.328.996Z" />
+                </svg>&nbsp;Register Now&nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                    fill="currentColor" class="bi bi-browser-edge" viewBox="0 0 16 16">
+                    <path
+                        d="M9.482 9.341c-.069.062-.17.153-.17.309 0 .162.107.325.3.456.877.613 2.521.54 2.592.538h.002c.667 0 1.32-.18 1.894-.519A3.838 3.838 0 0 0 16 6.819c.018-1.316-.44-2.218-.666-2.664l-.04-.08C13.963 1.487 11.106 0 8 0A8 8 0 0 0 .473 5.29C1.488 4.048 3.183 3.262 5 3.262c2.83 0 5.01 1.885 5.01 4.797h-.004v.002c0 .338-.168.832-.487 1.244l.006-.006a.594.594 0 0 1-.043.041Z" />
+                    <path
+                        d="M.01 7.753a8.137 8.137 0 0 0 .753 3.641 8 8 0 0 0 6.495 4.564 5.21 5.21 0 0 1-.785-.377h-.01l-.12-.075a5.45 5.45 0 0 1-1.56-1.463A5.543 5.543 0 0 1 6.81 5.8l.01-.004.025-.012c.208-.098.62-.292 1.167-.285.129.001.257.012.384.033a4.037 4.037 0 0 0-.993-.698l-.01-.005C6.348 4.282 5.199 4.263 5 4.263c-2.44 0-4.824 1.634-4.99 3.49Zm10.263 7.912c.088-.027.177-.054.265-.084-.102.032-.204.06-.307.086l.042-.002Z" />
+                    <path
+                        d="M10.228 15.667a5.21 5.21 0 0 0 .303-.086l.082-.025a8.019 8.019 0 0 0 4.162-3.3.25.25 0 0 0-.331-.35c-.215.112-.436.21-.663.294a6.367 6.367 0 0 1-2.243.4c-2.957 0-5.532-2.031-5.532-4.644.002-.135.017-.268.046-.399a4.543 4.543 0 0 0-.46 5.898l.003.005c.315.441.707.821 1.158 1.121h.003l.144.09c.877.55 1.721 1.078 3.328.996Z" />
+                </svg></button></center>
+    </div>
+
+
+    <div class="info">
+        <div class="contact">
+            <h1><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-chat-dots" viewBox="0 0 16 16">
+                    <path
+                        d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                    <path
+                        d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z" />
+                </svg> Get in touch with us</h1>
+            Name: &nbsp;<input type="text" style="background:lightpink;padding:6px;width:300px"><br><br>
+            E-Mail: <input type="email" style="background:lightpink;padding:6px;width:300px"><br><br>
+            Phone: <input type="text" style="background:lightpink;padding:6px;width:300px"><br><br>
+            <center>
+                <input type="submit" value="Submit Now"
+                    style="padding:10px;font-size:15px;font-weight:bolder;font-family:arial;background-color:lightskyblue"
+                    onclick="submit_click()">
+                <input type="reset" value="Reset Now"
+                    style="padding:10px;font-size:15px;font-weight:bolder;font-family:arial;background-color:lightskyblue"
+                    onclick="reset_click()">
+            </center>
+        </div>
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.326553727543!2d76.81527531505748!3d29.941284330393586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e3f422f5244e7%3A0x9c630c311d6349b8!2sNIT%20KURUKSHETRA!5e0!3m2!1sen!2sin!4v1661277483459!5m2!1sen!2sin"
+                width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
+        </div>
+        <div class="institute_contact">
+            <p style="color:white;font-size:15px;font-weight:bold"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="18" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                </svg>Address :<br><br> National Institute of
+                Technology, Kurukshetra<br>
+                Kirmich Road, Near Brahma Sarovar,<br>
+                Thanesar, Haryana -136119.<br><br><br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" fill="currentColor"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                </svg>Contact:<br><br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                    <circle cx="8" cy="9" r="4" />
+                </svg>Dean Student Welfare : 9746125634<br><br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                    <circle cx="8" cy="9" r="4" />
+                </svg>Dean Academics : 9746125634<br><br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                    <circle cx="8" cy="9" r="4" />
+                </svg>Registrar : 9746125634<br><br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                    <circle cx="8" cy="9" r="4" />
+                </svg>Student Help-Desk : 9746125634<br><br>
+            </p>
+        </div>
+
+    </div>
+    <div>
+    </div>
+</body>
+</html>
