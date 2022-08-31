@@ -2,6 +2,26 @@
 
 <head>
     <title>ICell E-Summit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Maze&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
     <style>
         body {
             background-image: url('wallpaper1.jpg')
@@ -14,11 +34,11 @@
         }
 
         #main_head {
-            background: -webkit-linear-gradient(gray, white);
+            background: -webkit-linear-gradient(darkgrey, white);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-size: 55px;
-            font-family: tahoma;
+            font-size: 45px;
+            font-family: 'Monoton', cursive;
             font-weight: bolder;
             margin-top: 7px;
             padding-left: 20px;
@@ -37,26 +57,28 @@
 
         .nav_item {
             background-color: white;
-            font-size: 20px;
+            font-size: 10px;
             padding: 6px;
             padding-left: 10px;
             padding-right: 10px;
             font-weight: bolder;
-            font-family: "arial";
+            font-family: 'Jua', sans-serif;
             font-size: 22px;
+            border-radius: 10px;
+            border: 4px dashed coral;
         }
 
         a:hover {
-            color: deeppink;
-            background-color: black;
+            color: black;
+            background-color: gray;
         }
 
         #ES {
             color: linear-gradient(red, yellow);
-            font-size: 120px;
+            font-size: 78px;
             font-weight: bolder;
             font-style: italic;
-            font-family: Brush Script MT;
+            font-family: 'Audiowide', cursive;
             margin-top: 60px;
             background: -webkit-linear-gradient(red, yellow);
             -webkit-background-clip: text;
@@ -68,7 +90,7 @@
             font-size: 120px;
             font-weight: bolder;
             font-style: italic;
-            font-family: Brush Script MT;
+            font-family: 'Audiowide', cursive;
             margin-top: 60px;
             background: -webkit-linear-gradient(red, yellow);
             -webkit-background-clip: text;
@@ -87,14 +109,14 @@
 
         .event_el1 {
             background-color: white;
-            padding: 30px;
+            padding: 20px;
             margin-top: 0px;
             background-color: grey;
             color: black;
             font-weight: bolder;
-            font-size: 30px;
+            font-size: 35px;
             border: 4px solid black;
-            font-family: cursive;
+            font-family: 'Kaushan Script', cursive;
             text-decoration: underline;
             border-radius: 100px;
 
@@ -102,13 +124,13 @@
 
         .event_el2 {
             background-color: white;
-            padding: 30px;
+            padding: 20px;
             margin-top: 0px;
             color: black;
             font-weight: bolder;
-            font-size: 30px;
+            font-size: 35px;
             border: 4px solid black;
-            font-family: cursive;
+            font-family: 'Kaushan Script', cursive;
             text-decoration: underline;
             border-radius: 100px;
 
@@ -193,7 +215,7 @@
         <div id="clg_logo"><img src="logo.png" height="250px" width="250px"></div>
         <div>
             <h1 id="main_head"><b>National Institute Of
-                Technology<center>Kurukshetra</center>
+                    Technology <center>Kurukshetra</center>
                     <center>And</center>
                     <center>Industry
                         Cell</center>
@@ -213,7 +235,7 @@
     </div>
     <h1 align="center" id="ES" onmouseout="changeback()" onmouseover="change()"></h1>
     <span class="photos">
-        <marquee scrollamount="18">
+        <marquee scrollamount="17.5">
             <span class="photos_p"><img src="p1.jpg" height="250px" width="500px"
                     style="border:4px dashed white"></span>
             <span class="photos_p"><img src="p2.jpg" height="250px" width="500px"
@@ -227,7 +249,7 @@
         </marquee>
     </span>
     <center>
-        <h1 style="font-size:80px;font-family:georgia;padding-bottom:4px;border-bottom:8px dashed skyblue"
+        <h1 style="font-size:80px;font-family: 'Audiowide', cursive;;padding-bottom:4px;border-bottom:8px dashed skyblue"
             id="our_event" onmouseout="change_1()" onmouseover="change_2()">Our
             Events</h1>
     </center>
@@ -239,7 +261,8 @@
         <div class="event_el1">B-Quiz</div>
     </div>
     <center>
-        <h1 id="ES" style="font-size:80px;font-family:georgia;padding-bottom:4px;border-bottom:8px dashed skyblue">
+        <h1 id="ES"
+            style="font-size:80px;font-family: 'Audiowide', cursive;;padding-bottom:4px;border-bottom:8px dashed skyblue">
             Highlights of &nbsp;E-Summit</h1>
     </center>
     <div class="events">
@@ -250,7 +273,13 @@
     </div>
     <div class="info">
         <div class="contact">
-            <h1>&star; Get in touch with us</h1>
+            <h1><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-chat-dots" viewBox="0 0 16 16">
+                    <path
+                        d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                    <path
+                        d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z" />
+                </svg> Get in touch with us</h1>
             Name: &nbsp;<input type="text" style="background:lightpink;padding:6px;width:300px"><br><br>
             E-Mail: <input type="email" style="background:lightpink;padding:6px;width:300px"><br><br>
             Phone: <input type="text" style="background:lightpink;padding:6px;width:300px"><br><br>
@@ -270,18 +299,40 @@
                 referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
         </div>
         <div class="institute_contact">
-            <p style="color:white;font-size:15px;font-weight:bold">&star; Address :<br><br> National Institute of
+            <p style="color:white;font-size:15px;font-weight:bold"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="18" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                </svg>Address :<br><br> National Institute of
                 Technology, Kurukshetra<br>
                 Kirmich Road, Near Brahma Sarovar,<br>
                 Thanesar, Haryana -136119.<br><br><br>
-                &star; Contact:<br><br>
-                Dean Student Welfare : 9746125634<br>
-                Dean Academics : 9746125634<br>
-                Registrar : 9746125634<br>
-                Student Help-Desk : 9746125634<br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" fill="currentColor"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                </svg>Contact:<br><br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                    <circle cx="8" cy="9" r="4" />
+                </svg>Dean Student Welfare : 9746125634<br><br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                    <circle cx="8" cy="9" r="4" />
+                </svg>Dean Academics : 9746125634<br><br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                    <circle cx="8" cy="9" r="4" />
+                </svg>Registrar : 9746125634<br><br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-circle-fill" viewBox="0 0 16 16">
+                    <circle cx="8" cy="9" r="4" />
+                </svg>Student Help-Desk : 9746125634<br><br>
             </p>
-
         </div>
+
+    </div>
+    <div>
 
     </div>
 </body>
